@@ -1,0 +1,122 @@
+.slick-slider * {
+  outline: none;
+}
+
+.slick-slider {
+  position: relative;
+  min-width: 1200px;
+  min-height: 400px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  text-indent: -999em;
+  border: 0;
+  background-color: #00BBC7;
+  background-repeat: no-repeat;
+  background-size: 17px 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.slick-prev {
+  left: 50%;
+  margin-left: -575px;
+  background-image: url(images/arrow_left.svg);
+  background-position: 45% center;
+}
+
+.slick-next {
+  right: 50%;
+  margin-right: -625px;
+  background-image: url(images/arrow_right.svg);
+  background-position: 55% center;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -17px;
+  z-index: 1001;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 34px;
+  padding: 9px 5px;
+  background-color: #E7E7E7;
+  border-radius: 50px;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  padding: 0;
+  text-indent: -999em;
+  background-color: #C6C6C6;
+  border: 0;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  width: 16px;
+  height: 16px;
+  background-color: #FEB604;
+}
+
+.btv-wrapper img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.btv-links {
+  position: absolute;
+  display: flex;
+  min-width: 1200px;
+  min-height: 400px;
+}
+
+.btv-link {
+  flex-grow: 1;
+}
+
+.btv-wrapper:not(.slick-slider) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btv-wrapper:not(.slick-slider) > div {
+  max-width: 1200px;
+}

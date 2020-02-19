@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    /* Apenas para visualização */
+    .btv-link:nth-child(1) {background-color:rgba(255, 0, 0, .1)}
+    .btv-link:nth-child(2) {background-color:rgba(0, 255, 0, .1)}
+    .btv-link:nth-child(3) {background-color:rgba(0, 0, 255, .1)}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="btvWrapper" class="btv-wrapper">
+      <div>
+        <div class="btv-links">
+          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+        </div>
+        <img src="http://placehold.it/1200x400/cceef0" />
+      </div>
+      <div>
+        <div class="btv-links">
+          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+          <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
+        </div>
+        <img src="http://placehold.it/1200x400/f0cccc" />
+      </div>
+      <div>
+        <div class="btv-links">
+          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+          <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
+          <a href="javascript:void(0);" class="btv-link" title="Link 3">Link 3</a>
+        </div>
+        <img src="http://placehold.it/1200x400/ccf0cc" />
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script>
+      function initBannerTV(id, config) {
+        return $('#' + id).slick({
+          dots: true,
+          fade: true,
+        });
+      }
+
+      initBannerTV('btvWrapper')
+    </script>
+
+</body>
+</html>
