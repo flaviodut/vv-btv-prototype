@@ -36,22 +36,48 @@
   background-size: 17px 26px;
   border-radius: 50%;
   cursor: pointer;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  transition: all 200ms;
 }
 
 .slick-prev {
   left: 50%;
-  margin-left: -575px;
+  margin-left: -600px;
   background-image: url(images/arrow_left.svg);
   background-position: 45% center;
 }
 
 .slick-next {
   right: 50%;
-  margin-right: -625px;
+  margin-right: -600px;
   background-image: url(images/arrow_right.svg);
   background-position: 55% center;
 }
+
+.slick-arrow:hover,
+.slick-arrow:focus {
+  transform: scale(1.2) translateY(-40%);
+}
+
+.slick-arrow:active {
+  transform: scale(1) translateY(-50%);
+}
+
+/* .slick-arrow:hover,
+.slick-arrow:focus {
+  width: 60px;
+  height: 60px;
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  margin-left: -605px;
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  margin-right: -605px;
+} */
 
 .slick-dots {
   position: absolute;
@@ -83,7 +109,7 @@
   background-color: #C6C6C6;
   border: 0;
   border-radius: 50%;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms;
   cursor: pointer;
 }
 
