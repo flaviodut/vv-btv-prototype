@@ -25,7 +25,7 @@
     .btv-link:nth-child(4) {background-color:rgba(255, 255, 0, .1)}
     .btv-link:nth-child(5) {background-color:rgba(0, 255, 255, .1)}
 
-    .timer {
+    .controls {
       position: fixed;
       bottom: 0;
       left: 0;
@@ -35,6 +35,8 @@
       font-weight: 700;
       text-align: center;
     }
+
+    .control {}
   </style>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -70,12 +72,17 @@
       </div>
     </div>
 
-    <p id="timer" class="timer">Slick será aplicado em <span>5</span> segundos.</p>
+    <div class="controls">
+      <button id="controlToggle" data-toggle="on">Desligar</button>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     <script>
-      'use strict'
+      'use strict';
+
+      var btv = 'btvWrapper';
+      var controlButton = document.querySelector('#controlToggle');
 
       function initBannerTV(id) {
         return $('#' + id).slick({
@@ -84,25 +91,19 @@
         });
       }
 
-      function setValue(el, n) {
-        return el.textContent = n;
-      }
+      initBannerTV(btv);
 
-      var $timerSpan = document.querySelector('#timer span');
-      var seconds = 10;
-
-      setValue($timerSpan, seconds);
-
-      var timer = setInterval(function() {
-        if (seconds !== 0) {
-          seconds--;
-          setValue($timerSpan, seconds);
+      controlButton.addEventListener('click', function(e) {
+        if (e.target.dataset.toggle === 'on') {
+          $('#' + btv).slick('unslick');
+          e.target.dataset.toggle = 'off';
+          e.target.textContent = 'Ligar';
         } else {
-          clearInterval(timer);
-          initBannerTV('btvWrapper');
-          $timerSpan.parentNode.style.display = 'none';
+          initBannerTV(btv);
+          e.target.dataset.toggle = 'on';
+          e.target.textContent = 'Desligar';
         }
-      }, 1000);
+      })
     </script>
 
 </body>
