@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
 }
 
 .slick-arrow {
@@ -93,11 +94,16 @@
 }
 
 .btv-wrapper img {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
   vertical-align: middle;
+  transform: translateX(-50%);
 }
 
 .btv-links {
   position: absolute;
+  z-index: 2;
   display: flex;
   min-width: 1200px;
   min-height: 400px;
