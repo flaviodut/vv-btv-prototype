@@ -40,6 +40,15 @@
   transition: all 200ms;
 }
 
+.slick-arrow:hover,
+.slick-arrow:focus {
+  transform: scale(1.2) translateY(-40%);
+}
+
+.slick-arrow:active {
+  transform: scale(1) translateY(-50%);
+}
+
 .slick-prev {
   left: 50%;
   margin-left: -600px;
@@ -53,31 +62,6 @@
   background-image: url(images/arrow_right.svg);
   background-position: 55% center;
 }
-
-.slick-arrow:hover,
-.slick-arrow:focus {
-  transform: scale(1.2) translateY(-40%);
-}
-
-.slick-arrow:active {
-  transform: scale(1) translateY(-50%);
-}
-
-/* .slick-arrow:hover,
-.slick-arrow:focus {
-  width: 60px;
-  height: 60px;
-}
-
-.slick-prev:hover,
-.slick-prev:focus {
-  margin-left: -605px;
-}
-
-.slick-next:hover,
-.slick-next:focus {
-  margin-right: -605px;
-} */
 
 .slick-dots {
   position: absolute;
