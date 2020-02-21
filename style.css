@@ -126,6 +126,10 @@
   max-width: 1200px;
 }
 
+.btv-wrapper:not(.slick-slider) > div:nth-child(n+2) {
+  display: none;
+}
+
 .btv-wrapper:not(.slick-slider) img {
   position: relative;
 }
