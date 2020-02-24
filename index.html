@@ -1,110 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTV</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <style>
-    html {
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
+        body { font: 400 16px/1.5 Arial, sans-serif; }
 
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-
-    body {
-      font: 400 16px/1.5 Arial, sans-serif;
-    }
-
-    /* Apenas para visualização */
-    .btv-link:nth-child(1) {background-color:rgba(255, 0, 0, .1)}
-    .btv-link:nth-child(2) {background-color:rgba(0, 255, 0, .1)}
-    .btv-link:nth-child(3) {background-color:rgba(0, 0, 255, .1)}
-    .btv-link:nth-child(4) {background-color:rgba(255, 255, 0, .1)}
-    .btv-link:nth-child(5) {background-color:rgba(0, 255, 255, .1)}
-
-    .controls {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: .5em;
-      font-weight: 1.5em;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    .control {}
-  </style>
-  <link rel="stylesheet" href="style.css">
+        /* Apenas para visualização */
+        .btv-link:nth-child(1) {background-color: rgba(255, 0, 0, .1)}
+        .btv-link:nth-child(2) {background-color: rgba(0, 255, 0, .1)}
+        .btv-link:nth-child(3) {background-color: rgba(0, 0, 255, .1)}
+        .btv-link:nth-child(4) {background-color: rgba(255, 255, 0, .1)}
+        .btv-link:nth-child(5) {background-color: rgba(0, 255, 255, .1)}
+        
+        .controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 2000;
+            width: 100%;
+            padding: .5em;
+            font-weight: 1.5em;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <div id="btvWrapper" class="btv-wrapper">
-      <div>
-        <div class="btv-links">
-          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+<body class="home">
+    <div class="area-root">
+        <div class="area-1">area-1</div>
+        <div class="area-2">
+            <div class="area-2-1">
+                area-2-1
+            </div>
+            <div class="area-2-2">
+
+                <div class="brnTvAuto brnTvAutoThumbnail">
+                    <div class="bnrAuto">
+                        <div class="ofAuto oft0 ">
+                            <a href="https://produto.extra.com.br/50003883?icid=hpdPID/teste/teste-flavio.aspx_BannerCarroussel_bn577_slot1" class="bannerConceitualLnk">
+                                <img src="images/Artwork1.png" class="bannerConceitual lazy" alt="" height="100%" width="100%">
+                            </a>
+                        </div>
+                        <div class="ofAuto oft0 ">
+                            <div class="btv-links">
+                                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+                            </div>
+                            <img src="images/Artwork2.png">
+                        </div>
+                        <div class="ofAuto oft0 ">
+                            <div class="btv-links">
+                                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+                                <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
+                                <a href="javascript:void(0);" class="btv-link" title="Link 3">Link 3</a>
+                            </div>
+                            <img src="images/Artwork3.png">
+                        </div>
+                        <div class="ofAuto oft0 ">
+                            <div class="btv-links">
+                                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+                                <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
+                            </div>
+                            <img src="images/Artwork4.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <img src="images/Artwork1.png" />
-      </div>
-      <div>
-        <div class="btv-links">
-          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
-        </div>
-        <img src="images/Artwork2.png" />
-      </div>
-      <div>
-        <div class="btv-links">
-          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
-          <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
-          <a href="javascript:void(0);" class="btv-link" title="Link 3">Link 3</a>
-        </div>
-        <img src="images/Artwork3.png" />
-      </div>
-      <div>
-        <div class="btv-links">
-          <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
-          <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
-        </div>
-        <img src="images/Artwork4.png" />
-      </div>
+        <div class="area-3">area-3</div>
     </div>
 
+    <!-- <div id="btvWrapper" class="btv-wrapper">
+        <div>
+            <div class="btv-links">
+                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+            </div>
+            <img src="images/Artwork1.png" />
+        </div>
+        <div>
+            <div class="btv-links">
+                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+            </div>
+            <img src="images/Artwork2.png" />
+        </div>
+        <div>
+            <div class="btv-links">
+                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+                <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
+                <a href="javascript:void(0);" class="btv-link" title="Link 3">Link 3</a>
+            </div>
+            <img src="images/Artwork3.png" />
+        </div>
+        <div>
+            <div class="btv-links">
+                <a href="javascript:void(0);" class="btv-link" title="Link 1">Link 1</a>
+                <a href="javascript:void(0);" class="btv-link" title="Link 2">Link 2</a>
+            </div>
+            <img src="images/Artwork4.png" />
+        </div>
+    </div> -->
+
     <div class="controls">
-      <button id="controlToggle" data-toggle="on">Desligar</button>
+        <button id="controlToggle" data-toggle="on">Desligar</button>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     <script>
-      'use strict';
+        'use strict';
 
-      var btv = 'btvWrapper';
-      var controlButton = document.querySelector('#controlToggle');
+        var btv = '.bnrAuto';
+        var controlButton = document.querySelector('#controlToggle');
 
-      function initBannerTV(id) {
-        return $('#' + id).slick({
-          dots: true,
-          fade: true,
-        });
-      }
-
-      initBannerTV(btv);
-
-      controlButton.addEventListener('click', function(e) {
-        if (e.target.dataset.toggle === 'on') {
-          $('#' + btv).slick('unslick');
-          e.target.dataset.toggle = 'off';
-          e.target.textContent = 'Ligar';
-        } else {
-          initBannerTV(btv);
-          e.target.dataset.toggle = 'on';
-          e.target.textContent = 'Desligar';
+        function initBannerTV(el) {
+            return $(el).slick({
+                dots: true,
+                fade: true,
+            });
         }
-      })
+
+        initBannerTV(btv);
+
+        controlButton.addEventListener('click', function (e) {
+            if (e.target.dataset.toggle === 'on') {
+                $(btv).slick('unslick');
+                e.target.dataset.toggle = 'off';
+                e.target.textContent = 'Ligar';
+            } else {
+                initBannerTV(btv);
+                e.target.dataset.toggle = 'on';
+                e.target.textContent = 'Desligar';
+            }
+        })
     </script>
 
 </body>
+
 </html>
