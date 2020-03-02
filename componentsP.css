@@ -1,6 +1,6 @@
 ﻿/**
  * EXTRA
- * Version: 13.2.1
+ * Version: 13.3.0
  */
 
 /* RESET MEYER
@@ -1178,26 +1178,28 @@ fieldset.prazo label{display:none}
 
 /* Banner Slider Departamento (via admin / com menu lateral) */
 .bnrAutoNav { position: relative; z-index: 10; margin-top: -396px; /*-360px*/ }
-.brnTvAuto { height: 396px; padding-top: 30px; background: #006699 url(//www.extra-imagens.com.br/Banner/pattern.png) repeat-x center; }
-.CamaMesaeBanho .brnTvAuto, .DVDseBlu-Ray .brnTvAuto, .PetShop .brnTvAuto, .Papelaria .brnTvAuto, .MalaseMochilas .brnTvAuto, .Livros .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-turquesa.jpg) no-repeat top center;}
-.BelezaeSaude .brnTvAuto, .Calcados .brnTvAuto, .Relogios .brnTvAuto, .Flores .brnTvAuto, .Perfumaria .brnTvAuto, .Artesanato .brnTvAuto, .Natal .brnTvAuto, .Joias .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-roxo.jpg) no-repeat top center;}
-.Automotivo .brnTvAuto, .Ferramentas .brnTvAuto, .Eletroportateis .brnTvAuto, .Eletrodomesticos .brnTvAuto, .Moveis .brnTvAuto, .InstrumentosMusicais .brnTvAuto, .LinhaIndustrial .brnTvAuto, .CasaeConstrucao .brnTvAuto, .Decoracao .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-amarelo.jpg) no-repeat top center;}
-.ArtigosparaFestas .brnTvAuto, .Bebes .brnTvAuto, .Brinquedos .brnTvAuto, .EsporteeLazer .brnTvAuto, .ProdutosdeLimpeza .brnTvAuto, .Bebidas .brnTvAuto, .UtilidadesDomesticas .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-verde.jpg) no-repeat top center;}
-.CamerasFilmadoraseDrones .brnTvAuto,.Audio .brnTvAuto,.Games .brnTvAuto,.AreVentilacao .brnTvAuto,.Tablets .brnTvAuto,.TelefoneseCelulares .brnTvAuto, .TVeVideo .brnTvAuto,.Informatica .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-cinza.jpg) no-repeat top center;}
-.bnrAuto { width: 100%; min-width: 59.5em; max-width: 80em; margin: 0 auto; padding-left: .313em; padding-right: .313em; }
-.bnrAuto .slick-list { width: 75%; height: 309px; margin-left: 25%; padding-left: .625em; padding-right: .625em; }
+.brnTvAuto {}
+.bnrAuto { position: relative; min-width: 1200px; min-height: 400px; }
+.bnrAuto .slick-list { overflow: hidden; }
+.bnrAuto .slick-slide { display: flex; justify-content: center; align-items: center; height: 400px; }
+
 .bnrAuto .slick-prev { left: 24.5%; }
 .bnrAuto .slick-next { right: 5px; }
 .bnrAuto:hover .slick-prev { left: 25.5%; }
 .bnrAuto:hover .slick-next { right: 15px; }
-.bnrAuto .slick-dots { bottom: -27px; width: 71.1%; margin-left: 25%; }
-.bnrAuto .slick-dots li { margin: 0 7px; }
-.bnrAuto .slick-dots li button { width: 12px; height: 12px; margin: 2px; outline: 0;}
-.bnrAuto .slick-dots li.slick-active button { width: 16px; height: 16px; margin: 0; background-color: #fc0;}
-.ofAuto { overflow: hidden; border-radius: 4px; opacity: 0; }
+
+.slick-dots { position: absolute; bottom: -17px; z-index: 1001; left: 50%; display: flex; width: auto; justify-content: center; align-items: stretch; height: 34px; padding: 9px 5px; background-color: #E7E7E7; border-radius: 50px; transform: translateX(-50%); }
+.slick-dots li { display: flex; justify-content: center; align-items: center; }
+.slick-dots button { width: 12px; height: 12px; margin: 0 6px; padding: 0; text-indent: -999em; background-color: #C6C6C6; border: 0; border-radius: 50%; transition: all 200ms; cursor: pointer; }
+.slick-dots li.slick-active button { width: 16px; height: 16px; margin: 0 4px; background-color: #FEB604; }
+
+.brnAuto img { position: absolute; left: 50%; z-index: 1; vertical-align: middle; transform: translateX(-50%); }
+.ofAuto > a { display: block; width: 1920px; height: 400px; }
+.btv-links { position: absolute; z-index: 2; display: flex; min-width: 1200px; min-height: 400px; }
+.btv-link { flex-grow: 1; }
+
 .area-2-1 .ofAuto{border-radius: 0px;}
 .home .ofAuto, .home .brnTvAuto { background: none; }
-.bannerConceitualLnk { position: absolute; left: 50%; display: block; width: 933px; height: 309px; margin-left: -470px; }
 .sideImage {position: relative; z-index: 10; float: left; margin-right: 0px; padding: 20px 0; text-align: center;width: 40%;background-color: #fff;padding-right: 0;}
 .sideImage .productImage { width: 269px; margin: 0 auto;}
 .sideImage .percentual { display: none; }
@@ -1255,6 +1257,13 @@ fieldset.prazo label{display:none}
 .brnTvAutoFull .sideImage {  position: absolute;margin: 0 0 0 50%;width: 360px;padding: 0;top: 40px;border-radius: 5px;left: -410px;}
 .brnTvAutoFull .sideImage .productImage { margin: 0 auto }
 .brnTvAutoFull .sideDetails { width: 550px; position: absolute;margin-left: 50%;left: -60px; }
+
+/* Custom BGs */
+.CamaMesaeBanho .brnTvAuto, .DVDseBlu-Ray .brnTvAuto, .PetShop .brnTvAuto, .Papelaria .brnTvAuto, .MalaseMochilas .brnTvAuto, .Livros .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-turquesa.jpg) no-repeat top center;}
+.BelezaeSaude .brnTvAuto, .Calcados .brnTvAuto, .Relogios .brnTvAuto, .Flores .brnTvAuto, .Perfumaria .brnTvAuto, .Artesanato .brnTvAuto, .Natal .brnTvAuto, .Joias .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-roxo.jpg) no-repeat top center;}
+.Automotivo .brnTvAuto, .Ferramentas .brnTvAuto, .Eletroportateis .brnTvAuto, .Eletrodomesticos .brnTvAuto, .Moveis .brnTvAuto, .InstrumentosMusicais .brnTvAuto, .LinhaIndustrial .brnTvAuto, .CasaeConstrucao .brnTvAuto, .Decoracao .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-amarelo.jpg) no-repeat top center;}
+.ArtigosparaFestas .brnTvAuto, .Bebes .brnTvAuto, .Brinquedos .brnTvAuto, .EsporteeLazer .brnTvAuto, .ProdutosdeLimpeza .brnTvAuto, .Bebidas .brnTvAuto, .UtilidadesDomesticas .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-verde.jpg) no-repeat top center;}
+.CamerasFilmadoraseDrones .brnTvAuto,.Audio .brnTvAuto,.Games .brnTvAuto,.AreVentilacao .brnTvAuto,.Tablets .brnTvAuto,.TelefoneseCelulares .brnTvAuto, .TVeVideo .brnTvAuto,.Informatica .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-cinza.jpg) no-repeat top center;}
 
 
 /* ABAS (Home/Produto)
@@ -2027,7 +2036,8 @@ body.home .area-root{background : #FFF;}
 .home [class^="area-"] {width: 100%;min-width: 62.5em;max-width: 80em;margin: 0 auto;/*padding-left: 6px;padding-right: 6px;*/box-sizing: border-box;}
 .home [class^="area-"]:after { content: ""; display: table; clear: both; }
 .home .area-root, .home .area-2, .home .area-8, .home .area-14 { width: 100%; min-width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
-.home .area-2-1{width: 100%; min-width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
+.home .area-2-1,
+.home .area-2-3 { width: 100%; min-width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
 .home .area-8 { background-color: #f4f4f4; }
 .home .area-14 { background-color: #ac1925; }
 
