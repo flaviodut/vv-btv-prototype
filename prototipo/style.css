@@ -52,14 +52,14 @@
 .slick-prev {
   left: 50%;
   margin-left: -600px;
-  background-image: url(images/arrow_left.svg);
+  background-image: url(arrow_left.svg);
   background-position: 45% center;
 }
 
 .slick-next {
   right: 50%;
   margin-right: -600px;
-  background-image: url(images/arrow_right.svg);
+  background-image: url(arrow_right.svg);
   background-position: 55% center;
 }
 
@@ -104,7 +104,7 @@
   background-color: #FEB604;
 }
 
-.brnAuto img {
+.btv-wrapper img {
   position: absolute;
   left: 50%;
   z-index: 1;
@@ -112,12 +112,6 @@
   transform: translateX(-50%);
 }
 
-.ofAuto > a {
-  width: 1920px;
-  height: 400px;
-}
-
-/* .ofAuto > a, */
 .btv-links {
   position: absolute;
   z-index: 2;
@@ -130,7 +124,7 @@
   flex-grow: 1;
 }
 
-.brnAuto:not(.slick-slider) {
+.btv-wrapper:not(.slick-slider) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,14 +133,14 @@
   overflow: hidden;
 }
 
-.brnAuto:not(.slick-slider) > div {
+.btv-wrapper:not(.slick-slider) > div {
   max-width: 1200px;
 }
 
-.brnAuto:not(.slick-slider) > div:nth-child(n+2) {
+.btv-wrapper:not(.slick-slider) > div:nth-child(n+2) {
   display: none;
 }
 
-.brnAuto:not(.slick-slider) img {
+.btv-wrapper:not(.slick-slider) img {
   position: relative;
 }
