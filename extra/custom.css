@@ -1,0 +1,145 @@
+/* Estrutura */
+.container-slots-cupom small,.mosaico-container small {color: #fff!important;}
+#RecomendacaoVejaTambem{margin-top: 40px;}
+
+/* Estrutura Vitrine e Slot*/
+.home .area-4-2 .raw h2{text-align: center !important; font-family: segoe ui; font-size: 39px !important; font-weight: 400; padding: 30px 0px 0px 0px !important; letter-spacing: -0.1pt;}
+.home .area-4-2 .raw h2 span {font-size: 27px !important; line-height: 35px; font-family: segoe ui; color: #666666; font-weight: 100; text-transform: none;}
+.home .area-4-2 {margin-bottom: -150px !important;}
+.home .prateleira,.home .pRecomendacao{border:none;height:auto; background: #fff; margin-top: 20px; z-index: 99; margin-bottom: 40px}
+.banner-slots h3 {color: #fff!important}
+
+.home .area-3-1 .bnr {margin-top: 60px;}
+
+.banner-slots li div {color: #fff!important}
+
+/* Vitrines Carousel*/
+/*.home .area-2-6{margin-top: -30px; margin-bottom: 30px !important; }*/
+.home .area-4-1 .prateleira{border-left:1px solid #e6e6e6;}
+.home .area-7-1{overflow:hidden;max-height:412px;}
+.home .area-7-1-1{border:1px solid #e15b00;border-right:none;border-radius:4px 0 0 4px;margin:0;width:23.2%;}
+.home .area-7-1-2{margin:0;width:76.8%;}
+.home .area-7-1-2 .prateleira{border-color:#e15b00;margin:0;}
+.home .prateleira .hproduct{height:409px;}
+.home .tit{max-width:77em;margin:0 0 15px;font:700 1.5em/1 Pluto,arial,sans-serif;letter-spacing:-.05em;color:#F3AF22;}
+
+/* Borda arredondada Vitrines */
+#w16_lx, #w17_lx, #w20_lx, #baixo_chaordic_lx {border-radius: 10px; overflow: hidden;}
+.home .area-14-1 .prateleira {padding: 20px; border-radius: 10px;}
+
+/*.home .area-9-1{background:url(//www.extra-imagens.com.br/Banner/carrossel-departamento/2017/06-junho/28/background/bg-categoria.gif) no-repeat top center #ebebeb;overflow:hidden;max-height:260px;border:1px solid #5e6201;border-radius:4px;}
+.home .area-9-1-1,.home .area-9-1-2{background:none;margin-left:0;}*/
+
+/*.home .area-8-2-1{background:#f05f18;}*/
+.home .area-9-1-2{margin:0;}
+.home .area-8-2-1 { min-width: initial; max-width: none; width: 22.6%; padding: 0; float: left; background: none;}
+.home .area-8-2-2 { min-width: initial; max-width: none; width: 74.6%; padding: 0; float: right;  background: none;}
+/*.home .area-7-2{background:url(https://www.extra-imagens.com.br/criacao/01-home/retira/2019/02-fev/25/BG.png) no-repeat top center ;overflow:hidden;height: 340px;}*/
+.home .area-7-2-1,.home .area-7-2-2{background:none;margin-left:0}
+.home .area-7-2-2{margin:0}
+.home .area-7-2-1{min-width:initial;max-width:none;width:22.6%;padding:0;float:left}
+.home .area-7-2-2{min-width:initial;max-width:none;width:74.6%;padding:0;float:right}
+.home .area-7-2-1 .listCategory{margin: 15px 0px 0px 20px;}
+.home .area-8-2{background:url(https://www.extra-imagens.com.br/criacao/01-home/retira/2019/02-fev/25/BG.png) no-repeat top center ;overflow:hidden;height: 340px;}
+.home .area-9-2{overflow:hidden;max-height:412px}
+/*.home .area-9-2-1{border:1px solid #e6e6e6;border-radius:4px 0 0 4px;min-width:initial;max-width:none;width:23.2%;padding:0;float:left}*/
+.home .area-9-2-2{margin:0;min-width:initial;max-width:none;width:76.8%;padding:0;float:right}
+.home .area-9-2-2 .prateleira{background-color:#fff;border-radius:0 4px 4px 0;border-top:1px solid #e4ebf1;border-right:1px solid #e4ebf1;border-bottom:1px solid #e4ebf1;margin:0}
+.home .area-9-2 .prateleira .productDetails{background-color:#d6d6d6}
+.home .area-9-2 .prateleira .hproduct{border:0;width:97%}
+.home .area-14-1 .prateleira{border:none;}
+.home .area-14-1 .percycle-products{border:1px solid #e6e6e6;border-radius:4px;}
+.home .area-12,.home .area-15,.home .area-16{display:block;}
+.home .area-12-1-1{width:100%;margin:0;}
+.home .area-12-1-1 .prateleira{border-left:1px solid #e6e6e6;border-radius:4px;}
+.home .percycle{margin:0 auto;width:100%!important;}
+.home .area-10{ display: none; }
+.home .area-6, .home .area-7, .home .area-8, .home .area-9, .home .area-10, .home .area-11, .home .area-12, .home .area-13-3, .home .area-14, .home .area-15, .home .area-16, .home .area-17{ padding: 0; }
+.area-17, .area-18{ margin: 0 !important;}
+/*.home [class^="area-9-"]{ margin-bottom: 30px !important; }*/
+
+/* Estilo para vitrine de Retira */
+/*.home .area-8-2{background:url(https://www.extra-imagens.com.br/criacao/01-home/retira/2019/02-fev/25/BG.png) no-repeat top center ;overflow:hidden;height: 340px;}
+.home .area-8-2-1,.home .area-7-2-2{background:none;margin-left:0}
+.home .area-8-2-2{margin:0; background: none;}
+.home .area-8-2-1{min-width:initial;max-width:none;width:22.6%;padding:0;float:left}
+.home .area-8-2-2{min-width:initial;max-width:none;width:74.6%;padding:0;float:right}
+.home .area-8-2-1 .listCategory{margin: 15px 0px 0px 20px;}
+*/
+
+.home .area-11, .home .area-7-1, .home .area-9-4 { display: none; }
+.home .area-9 .area-9-1{ border:none !important;}
+
+/* Banner's */
+.OffersCollection .contGroupsCollection{margin:0;padding:0; width: 1280px;}
+.OffersCollection .contGroupsCollection .groupsCollection{margin:0;padding:0;overflow:hidden;/*max-height:370px;*/}
+.OffersCollection .contGroupsCollection .groupsCollection li{margin:0 23px 0 0;padding:0;float:left;}
+.OffersCollection .contGroupsCollection .groupsCollection li:last-child{margin:0;}
+.OffersCollection .contGroupsCollection .groupsCollection li .listCollection{/*border-radius:5px;border:1px solid #d6d6d6;*/padding:5px;text-align:center;}
+.OffersCollection .contGroupsCollection .groupsCollection li .listCollection img{display:block;/*max-width:289px;max-height:350px;*/width:auto;height:auto;}
+.OffersShelf .contGroupsShelf{margin:0;padding:0;}
+.OffersShelf .contGroupsShelf .groupsShelf{margin:0;padding:0;overflow:hidden;}
+.OffersShelf .contGroupsShelf .groupsShelf li{margin:0;padding:0;float:left;}
+.OffersShelf .contGroupsShelf .groupsShelf li:last-child{margin:0;}
+.OffersShelf .contGroupsShelf .groupsShelf li .listShelf img{display:block;}
+.OffersEnjoy .contGroupsEnjoy{margin:20px 0;padding:0;}
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy{margin:0;padding:0;width:100%; min-width: 1280px;}
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy li{margin:0;padding:0;}
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy li:last-child{margin:0;}
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy .listOffersEnjoy{border-radius:5px;border:1px solid #d6d6d6;padding:5px;text-align:center;float:left;width:initial;margin:0 0 20px;}
+.OffersEnjoy .contGroupsEnjoy .bDouble{width:100%;}
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy .bBig{margin-right:0;}
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy .blast, .OffersEnjoy .contGroupsEnjoy .groupsEnjoy .bRectangle{ float: right; }
+.OffersEnjoy .contGroupsEnjoy .groupsEnjoy li:nth-child(2) .listOffersEnjoy{ margin-left: 17px; }
+.OffersRank{margin:15px 11px 0 20px;;padding:0;}
+.groupsRank .draggable{padding:0;}
+.groupsRank .draggable .slick-track li{margin-right:15px;}
+.OffersCategoryEsp .contGroupsCategoryEsp{margin:0;padding:0;}
+.OffersCategoryEsp .contGroupsCategoryEsp .groupsCategoryEsp{margin:0;padding:0;width:100%;}
+.OffersCategoryEsp .contGroupsCategoryEsp .groupsCategoryEsp li{margin:0 16px 0 0;padding:0;display:inline-block;}
+.OffersCategoryEsp .contGroupsCategoryEsp .groupsCategoryEsp li:last-child{margin:0;}
+.OffersCategoryEsp .contGroupsCategoryEsp .groupsCategoryEsp .listCategoryEsp{border-radius:5px;border:1px solid #d6d6d6;padding:5px;text-align:center;float:left;width:initial;margin:0 0 20px;}
+.banneralimentos{width:100%; margin: 0 auto;}
+.OffersMidia .contGroupsMidia{border-radius:5px;border:1px solid #d6d6d6;margin:20px auto;padding:0 .625em;text-align:center;width:100%;}
+.OffersMidia .contGroupsMidia .groupsMidia{background:#FFF;padding:15px;width:100%;overflow:hidden;position:relative;}
+.OffersMidia .contGroupsMidia .groupsMidia li{margin-left:1%;margin-right:1%;display:inline-block;}
+.OffersMidia .contGroupsMidia .groupsMidia li:first-child{margin-left:0;}
+.home .bnr{width:100%!important;position:relative;float:left;padding:15px;position:relative; margin: 0 auto;}
+.home .bnr-promo .bnr-wrap div.sb-produto1{width:100%;margin:0;}
+
+.listCategory img{ max-width: inherit; padding: 15px 35px;}
+/*.listCategory img{ max-width: inherit; padding-left: 17px;}*/
+
+.home .bnr-promo{ margin-top: 30px; }
+.home .bnr-promo:after{ content: ""; }
+
+.home .area-5-2 .OffersCollection {margin-top: 30px;}
+.home .area-5-2 .OffersCollection .contGroupsCollection .groupsCollection{ max-height: 422px;  }
+.home .area-5-2 .OffersCollection .contGroupsCollection .groupsCollection li{ /*! margin: 0 11px 0 0; */ }
+.home .area-5-2 .OffersCollection .contGroupsCollection .groupsCollection li .listCollection img{ max-width: 100%; max-height: 100%; }
+ .home .area-6 .prateleira .productDetails, .home .area-7 .prateleira .productDetails, .home .area-8 .prateleira .productDetails, .home .area-10 .prateleira .productDetails, .home .area-11 .prateleira .productDetails, .home .area-12 .prateleira .productDetails, .home .area-13 .prateleira .productDetails, .home .area-14 .prateleira .productDetails, .home .area-15 .prateleira .productDetails, .home .area-16 .prateleira .productDetails, .home .area-17 .prateleira .productDetails{
+    background-color: #d6d6d6 !important;
+ }
+
+/* News */
+.area-16{ margin-bottom: 0 !important; padding: 20px 0 !important; height: 81px; }
+.area-16-1{background:none!important;}
+.area-16-1 .newsletter .tit{float:left;width:50%;padding:14px 0;font-size:1.125em;font-family:"Pluto",arial;}
+
+.prateleira .price.sale strong {
+    position: absolute;
+    bottom: 17px;
+    display: block;
+    font: 700 34px 'PlutoCond', arial, sans-serif;
+    color: #eb1c29 !important;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+
+.prateleira .price.from, .prateleira .price.oldPrice, .prateleira .price.sale, .prateleira .installment, .prateleira .interestRates, .prateleira .parcel{
+    font-weight: 400;
+    font-size: .750em;
+    line-height: 1.083;
+    color: #000 !important;
+}

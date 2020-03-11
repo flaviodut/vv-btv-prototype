@@ -1,6 +1,6 @@
 ﻿/**
  * EXTRA
- * Version: 13.2.1
+ * Version: 13.3.0
  */
 
 /* RESET MEYER
@@ -1158,17 +1158,20 @@ fieldset.prazo label{display:none}
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
 /* Setas de navegacao */
-.slick-prev, .slick-next { position: absolute; top: 50%; z-index: 50; width: 30px; height: 30px; margin-top: -15px; text-indent: -999em; background-color: #48bac6; border: none; border-radius: 50%; cursor: pointer; filter: alpha(opacity=0); opacity: 0; transition: all 250ms ease-in-out; outline: 0; }
-.slick-prev { left: 10px; }
-.slick-next { right: 10px; }
-.slick-prev:after, .slick-next:after { content: ""; position: absolute; top: 8px; }
-.slick-prev:after { right: 12px; width: 0; height: 0; border-style: solid; border-width: 7px 7px 7px 0; border-color: transparent #fff transparent transparent; }
-.slick-next:after { left: 12px; width: 0; height: 0; border-style: solid; border-width: 7px 0 7px 7px; border-color: transparent transparent transparent #fff; }
+.home:not(.home) .slick-prev,
+.home:not(.home) .slick-next { position: absolute; top: 50%; transform: translateY(-50%); z-index: 50; width: 30px; height: 30px; text-indent: -999em; background-color: #48bac6; border: none; border-radius: 50%; cursor: pointer; filter: alpha(opacity=0); opacity: 0; transition: all 250ms ease-in-out; outline: 0; }
+.home:not(.home) .slick-prev { left: 10px; }
+.home:not(.home) .slick-next { right: 10px; }
+.home:not(.home) .slick-prev:after,
+.home:not(.home) .slick-next:after { content: ""; position: absolute; top: 8px; }
+.home:not(.home) .slick-prev:after { right: 12px; width: 0; height: 0; border-style: solid; border-width: 7px 7px 7px 0; border-color: transparent #fff transparent transparent; }
+.home:not(.home) .slick-next:after { left: 12px; width: 0; height: 0; border-style: solid; border-width: 7px 0 7px 7px; border-color: transparent transparent transparent #fff; }
 
-.slick-prev.slick-disabled, .slick-next.slick-disabled { filter: alpha(opacity=0); opacity: 0; cursor: default; }
-.slick-slider:hover .slick-prev { left: 0; filter: alpha(opacity=100); opacity: 1; }
-.slick-slider:hover .slick-next { right: 0; filter: alpha(opacity=100); opacity: 1; }
-.slick-slider:hover .slick-prev.slick-disabled, .slick-slider:hover .slick-next.slick-disabled { filter: alpha(opacity=25); opacity: .25; }
+.home:not(.home) .slick-prev.slick-disabled, .home:not(.home) .slick-next.slick-disabled { filter: alpha(opacity=0); opacity: 0; cursor: default; }
+.home:not(.home) .slick-slider:hover .slick-prev { left: 0; filter: alpha(opacity=100); opacity: 1; }
+.home:not(.home) .slick-slider:hover .slick-next { right: 0; filter: alpha(opacity=100); opacity: 1; }
+.home:not(.home) .slick-slider:hover .slick-prev.slick-disabled,
+.home:not(.home) .slick-slider:hover .slick-next.slick-disabled { filter: alpha(opacity=25); opacity: .25; }
 
 /* Bullets */
 .slick-dots { position: absolute; bottom: -14px; width: 100%; text-align: center; }
@@ -1177,30 +1180,29 @@ fieldset.prazo label{display:none}
 .slick-dots li.slick-active button { background-color: #717477; }
 
 /* Banner Slider Departamento (via admin / com menu lateral) */
-.bnrAutoNav { position: relative; z-index: 10; margin-top: -396px; /*-360px*/ }
-.brnTvAuto { height: 396px; padding-top: 30px; background: #006699 url(//www.extra-imagens.com.br/Banner/pattern.png) repeat-x center; }
+.departamento .bnrAutoNav { position: relative; z-index: 10; margin-top: -396px; /*-360px*/ }
+.departamento .brnTvAuto { height: 396px; padding-top: 30px; background: #006699 url(//www.extra-imagens.com.br/Banner/pattern.png) repeat-x center; }
 .CamaMesaeBanho .brnTvAuto, .DVDseBlu-Ray .brnTvAuto, .PetShop .brnTvAuto, .Papelaria .brnTvAuto, .MalaseMochilas .brnTvAuto, .Livros .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-turquesa.jpg) no-repeat top center;}
 .BelezaeSaude .brnTvAuto, .Calcados .brnTvAuto, .Relogios .brnTvAuto, .Flores .brnTvAuto, .Perfumaria .brnTvAuto, .Artesanato .brnTvAuto, .Natal .brnTvAuto, .Joias .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-roxo.jpg) no-repeat top center;}
 .Automotivo .brnTvAuto, .Ferramentas .brnTvAuto, .Eletroportateis .brnTvAuto, .Eletrodomesticos .brnTvAuto, .Moveis .brnTvAuto, .InstrumentosMusicais .brnTvAuto, .LinhaIndustrial .brnTvAuto, .CasaeConstrucao .brnTvAuto, .Decoracao .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-amarelo.jpg) no-repeat top center;}
 .ArtigosparaFestas .brnTvAuto, .Bebes .brnTvAuto, .Brinquedos .brnTvAuto, .EsporteeLazer .brnTvAuto, .ProdutosdeLimpeza .brnTvAuto, .Bebidas .brnTvAuto, .UtilidadesDomesticas .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-verde.jpg) no-repeat top center;}
 .CamerasFilmadoraseDrones .brnTvAuto,.Audio .brnTvAuto,.Games .brnTvAuto,.AreVentilacao .brnTvAuto,.Tablets .brnTvAuto,.TelefoneseCelulares .brnTvAuto, .TVeVideo .brnTvAuto,.Informatica .brnTvAuto{ background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-cinza.jpg) no-repeat top center;}
-.bnrAuto { width: 100%; min-width: 59.5em; max-width: 80em; margin: 0 auto; padding-left: .313em; padding-right: .313em; }
-.bnrAuto .slick-list { width: 75%; height: 309px; margin-left: 25%; padding-left: .625em; padding-right: .625em; }
-.bnrAuto .slick-prev { left: 24.5%; }
-.bnrAuto .slick-next { right: 5px; }
-.bnrAuto:hover .slick-prev { left: 25.5%; }
-.bnrAuto:hover .slick-next { right: 15px; }
-.bnrAuto .slick-dots { bottom: -27px; width: 71.1%; margin-left: 25%; }
-.bnrAuto .slick-dots li { margin: 0 7px; }
-.bnrAuto .slick-dots li button { width: 12px; height: 12px; margin: 2px; outline: 0;}
-.bnrAuto .slick-dots li.slick-active button { width: 16px; height: 16px; margin: 0; background-color: #fc0;}
-.ofAuto { overflow: hidden; border-radius: 4px; opacity: 0; }
+.departamento .bnrAuto { width: 100%; min-width: 59.5em; max-width: 80em; margin: 0 auto; padding-left: .313em; padding-right: .313em; }
+.departamento .bnrAuto .slick-list { width: 75%; height: 309px; margin-left: 25%; padding-left: .625em; padding-right: .625em; }
+.departamento .bnrAuto .slick-prev { left: 24.5%; }
+.departamento .bnrAuto .slick-next { right: 5px; }
+.departamento .bnrAuto:hover .slick-prev { left: 25.5%; }
+.departamento .bnrAuto:hover .slick-next { right: 15px; }
+.departamento .bnrAuto .slick-dots { bottom: -27px; width: 71.1%; margin-left: 25%; }
+.departamento .bnrAuto .slick-dots li { margin: 0 7px; }
+.departamento .bnrAuto .slick-dots li button { width: 12px; height: 12px; margin: 2px; outline: 0;}
+.departamento .bnrAuto .slick-dots li.slick-active button { width: 16px; height: 16px; margin: 0; background-color: #fc0;}
+.departamento .ofAuto { overflow: hidden; border-radius: 4px; opacity: 0; }
 .area-2-1 .ofAuto{border-radius: 0px;}
 .home .ofAuto, .home .brnTvAuto { background: none; }
-.bannerConceitualLnk { position: absolute; left: 50%; display: block; width: 933px; height: 309px; margin-left: -470px; }
-.sideImage {position: relative; z-index: 10; float: left; margin-right: 0px; padding: 20px 0; text-align: center;width: 40%;background-color: #fff;padding-right: 0;}
-.sideImage .productImage { width: 269px; margin: 0 auto;}
-.sideImage .percentual { display: none; }
+.departamento .sideImage {position: relative; z-index: 10; float: left; margin-right: 0px; padding: 20px 0; text-align: center;width: 40%;background-color: #fff;padding-right: 0;}
+.departamento .sideImage .productImage { width: 269px; margin: 0 auto;}
+.departamento .sideImage .percentual { display: none; }
 #RecomendacaoPorCategoria .sideImage .percentual{display:block!important;background-color:#eb1d29;color:#fc0;width:55px;padding:13px 0 0;border-radius:50%;height:55px;text-align:center;vertical-align:middle;font-weight:bold;position:absolute;top:28px;right:0;font-size:18px;z-index:99}
 .sideDetails { position: relative; width: 60%; height: 100%; padding: 42px 20px 40px 80px; background: url(//www.extra-imagens.com.br/html/departamento/bg/images/bg-det-prod.gif) no-repeat top left #F4F4F4; float: right;}
 .sideDetails .flagsAuto { margin-bottom: 8px; }
@@ -1255,6 +1257,49 @@ fieldset.prazo label{display:none}
 .brnTvAutoFull .sideImage {  position: absolute;margin: 0 0 0 50%;width: 360px;padding: 0;top: 40px;border-radius: 5px;left: -410px;}
 .brnTvAutoFull .sideImage .productImage { margin: 0 auto }
 .brnTvAutoFull .sideDetails { width: 550px; position: absolute;margin-left: 50%;left: -60px; }
+
+/* Banner Slider HOME */
+.home .brnTvAuto {}
+.home .bnrAutoNav { position: relative; z-index: 10; margin-top: -396px; /*-360px*/ }
+.home .bnrAuto { position: relative; min-width: 1200px; min-height: 400px; }
+.home .bnrAuto.slick-slider * { outline: none; }
+.home .bnrAuto .slick-list { overflow: hidden; }
+.home .bnrAuto .slick-slide { display: flex; justify-content: center; align-items: center; height: 400px; }
+
+.home .bnrAuto.slick-slider:hover .slick-prev { left: 50%; filter: alpha(opacity=100); opacity: 1; }
+.home .bnrAuto.slick-slider:hover .slick-next { right: 50%; filter: alpha(opacity=100); opacity: 1; }
+.home .bnrAuto .slick-arrow { position: absolute; top: 50%; z-index: 999; width: 50px; height: 50px; text-indent: -999em; border: 0; background-color: #00BBC7; background-repeat: no-repeat; background-size: 17px 26px; border-radius: 50%; filter: "alpha(opacity=100)"; opacity: 1; cursor: pointer; transform: translateY(-50%); transition: all 200ms; }
+.home .bnrAuto .slick-arrow:hover { transform: scale(1.2) translateY(-40%); }
+.home .bnrAuto .slick-arrow:active { transform: scale(1) translateY(-50%); }
+.home .bnrAuto .slick-prev { left: 50%; margin-left: -600px; background-image: url(//www.extra-imagens.com.br/App_Themes/Extra/img/arrow_left.svg); background-position: 45% center; }
+.home .bnrAuto .slick-next { right: 50%; margin-right: -600px; background-image: url(//www.extra-imagens.com.br/App_Themes/Extra/img/arrow_right.svg); background-position: 55% center; }
+
+.home .bnrAuto .slick-dots { position: absolute; bottom: -17px; z-index: 100; left: 50%; display: flex; width: auto; justify-content: center; align-items: stretch; height: 34px; padding: 9px 5px; background-color: #E7E7E7; border-radius: 50px; transform: translateX(-50%); }
+.home .bnrAuto .slick-dots li { display: flex; justify-content: center; align-items: center; margin: 0; }
+.home .bnrAuto .slick-dots button { width: 12px; height: 12px; margin: 0 6px; padding: 0; text-indent: -999em; background-color: #C6C6C6; border: 0; border-radius: 50%; transition: all 200ms; cursor: pointer; }
+.home .bnrAuto .slick-dots .slick-active button { width: 16px; height: 16px; margin: 0 4px; background-color: #FEB604; }
+
+.home .brnAuto img { position: absolute; left: 50%; z-index: 1; vertical-align: middle; transform: translateX(-50%); }
+.home .ofAuto > a,
+.home .ofAuto > .btv-image { position: absolute; display: block; width: 1920px; height: 400px; }
+.home .btv-links { position: absolute; z-index: 2; display: flex; min-width: 1200px; min-height: 400px; }
+.home .btv-link { flex-grow: 1; }
+.home .bnrAuto .btv-timer { position: absolute; bottom: 0; left: 50%; z-index: 1; display: flex; justify-content: center; min-width: 260px; margin: 0 0 55px -520px; padding: 10px 0; background-color: rgba(0, 0, 0, .2); border-radius: 5px; }
+.home .bnrAuto .btv-timer:empty { display: none; }
+.home .bnrAuto .btv-timer span { font-size: 2.25em; font-weight: 700; line-height: 1; color: #fff; text-align: center; }
+.home .bnrAuto .btv-timer .thour { text-align: right; }
+.home .bnrAuto .btv-timer .thour,
+.home .bnrAuto .btv-timer .tminute,
+.home .bnrAuto .btv-timer .tsecond { min-width: 1.167em; }
+.home .bnrAuto .btv-timer .tmilsc { min-width: 1.750em; }
+.home .bnrAuto .btv-timer .tdiv { min-width: .278em; }
+.home .bnrAuto .btv-timer .tmilsc,
+.home .bnrAuto .btv-timer .tm2 { display: none; }
+
+.home .bnrAuto:not(.slick-slider) { display: flex; flex-direction: column; justify-content: center; align-items: center; min-width: 1200px; overflow: hidden; }
+.home .bnrAuto:not(.slick-slider) > div { width: 1920px; height: 400px; }
+.home .bnrAuto:not(.slick-slider) > div:nth-child(n+2) { display: none; }
+.home .bnrAuto:not(.slick-slider) img { position: relative; }
 
 
 /* ABAS (Home/Produto)
@@ -2027,7 +2072,8 @@ body.home .area-root{background : #FFF;}
 .home [class^="area-"] {width: 100%;min-width: 62.5em;max-width: 80em;margin: 0 auto;/*padding-left: 6px;padding-right: 6px;*/box-sizing: border-box;}
 .home [class^="area-"]:after { content: ""; display: table; clear: both; }
 .home .area-root, .home .area-2, .home .area-8, .home .area-14 { width: 100%; min-width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
-.home .area-2-1{width: 100%; min-width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
+.home .area-2-1,
+.home .area-2-3 { width: 100%; min-width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
 .home .area-8 { background-color: #f4f4f4; }
 .home .area-14 { background-color: #ac1925; }
 
@@ -2636,9 +2682,9 @@ body.busca-resultado .lista-busca-compare .vitrineProdutos li .selos-produtos li
 .ofAuto .selos-produtos li img{ display: none; }
 
 /* Selo Produto */
-.sku .selos-produtos{position:absolute;left:-530px;z-index:99;top:300px}
+.sku .selos-produtos{position:absolute;left:-550px;z-index:99;top:320px}
 .sku .selos-produtos li{margin:0!important;padding:0!important;display:inline-block!important;width:auto!important;float:none}
-.sku .selos-produtos li img{width: 110px; height: 110px;}
+.sku .selos-produtos li img{width: 90px; height: 90px;}
 
 /* Selo Black Friday */
 .prateleira .blackfriday .prod_logo_b2c{position:absolute;top:10px!important;left:10px!important;width:50px;height:50px;background:url(//www.extra-imagens.com.br/App_Themes/Extra/img/bf2019/selo-blackfriday.png) no-repeat; background-size: 50px;z-index:999;}
